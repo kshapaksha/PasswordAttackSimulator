@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD ATTACK SIMULATOR</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>How Hackers Get Your Password</h1>
+        <p>Type a password. Think like an attacker.</p>
+
+        <div class="disclaimer">
+            <p><strong>Educational Tool: </strong>No data is stored, sent or saved.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>Step 1: Enter a Password</h2>
+
+            <div class="password-box">
+                <label for="password">Type any password so as to analyze</label>
+                <br>
+                <input type="password" id="password" placeholder="Enter a password to test">
+                
+
+                <div class="strength-meter">
+                    <div class="strength-bar"></div>
+                </div>
+
+                <p class="strength-text">Password Strength will appear here.</p>
+            </div>
+        </section>
+
+        <section class="analysis-section">
+            <h2>Step 2: Analysis of your Password</h2>
+
+            <div class="analysis-grid">
+                <div class="analysis-card">
+                    <h3>Password Length Analysis</h3>
+                    <p class="result" id="length-result">0 characters</p>
+                    <p class="description">Every character increases the time to crack a password</p>
+                </div>
+                
+                <div class="analysis-card">
+                    <h3>Variety of Characters</h3>
+                    <p class="result" id="variety-result">No characters</p>
+                    <p class="description">Using multiple character types improves security</p>
+                </div>
+
+                <div class="analysis-card">
+                    <h3>Estimated time</h3>
+                    <p class="result" id="time-result">Instantly</p>
+                    <p class="description">Baed on basic estimation</p>
+                </div>
+
+                <div class="analysis-card">
+                    <h3>Security Issues</h3>
+                    <p class="result" id="issues-result">No Password Entered</p>
+                    <p class="description">General Weaknesses Detected</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="attack-section">
+            <h2>Step 3: Attack Simultation</h2>
+
+            <div class="attack-grid">
+                <div class="attack-card">
+                    <h3 class="attack-title">Password Guessing Attack</h3>
+                    <div class="attack-animation">
+                        <p class="animation-text">
+                            a→b→c→...→password123
+                        </p>
+                    </div>
+                    <div class="attack-result">
+                        <p><strong>Status:</strong> Would take seconds</p>
+                        <p>Testing every possible combination</p>
+                    </div>
+                </div>
+
+                <div class="attack-card">
+                    <h3 class="attack-title">Dictionary Attack</h3>
+                    <div class="attack-animation">
+                        <p class="animation-text">
+                            password<br>
+                            admin<br>
+                            123456<br>
+                            password123 ← FOUND
+                        </p>
+                    </div>
+                    <div class="attack-result">
+                        <p><strong>Status:</strong> Found in common passwords list</p>
+                        <p>Testing each and every kind of leaked passsword</p>
+                    </div>
+                </div>
+
+                <div class="attack-card">
+                    <h3 class="attack-title">Paattern Recognition</h3>
+                    <div class="attack-animation">
+                        <p class="animation-text">
+                            qwerty → 12345 → abc123
+                        </p>
+                    </div>
+                    <div class="attack-result">
+                        <p><strong>Status:</strong> Common patterns detected</p>
+                        <p>Keyboard patterns, sequences, dates</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="good-password-section">
+            <h2>Step 4: Strong Password Example</h2>
+
+            <div class="example-box">
+                <div class="example-password">
+                    <h3>What a Strong Password Looks Like:</h3>
+                    <p class="strong-password">P2@6&Lp#!bT$0rQ</p>
+                    <div class="example-analysis">
+                        <p>15 Characters Long</p>
+                        <p>Mix of Uppercase, Lowercase, Numbers, Symbols</p>
+                        <p>No Common Words or Patterns</p>
+                        <p>Estimeted Crack Time: Centuries</p>
+                    </div>
+                </div>
+
+                <div class="password-tips">
+                    <h3>Password Tips:</h3>
+                    <ul>
+                        <li>Use 12 or more characters</li>
+                        <li>Avoid common words or patterns</li>
+                        <li>Use a password manager</li>
+                        <li>Mix character types (a-z, A-Z, 0-9, #@$&)</li>
+                        <li>Enable two-factor authentication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-message">
+            <h2>Step 5: What to Remember</h2>
+            <div class="quote box">
+                <p class="big-quote">"Most hackers don't break systems.<br>They break passwords."</p>
+                <p class="quote-suject">Strong passwords are first line of defence in cybersecurity.</p>
+            </div>
+        </section>
+
+        <section class="explanation">
+            <h2>How This Simulator Works</h2>
+            <div class="explanation-content">
+                <div class="explanation-point">
+                    <h3>What We DO:</h3>
+                    <ul>
+                        <li>Analyze password Legnth and Complexity</li>
+                        <li>Compare against common passsword lists</li>
+                        <li>Educate about password security</li>
+                        <li>Estimate cracking time based on the complexity of the password</li>
+                    </ul>
+                </div>
+
+                <div class="explanation-point">
+                    <h3>What We DON'T DO:</h3>
+                    <ul>
+                        <li>Actually crack password</li>
+                        <li>Store or transmit your password</li>
+                        <li>Connect to external databases (except public breach APIs in future versions)
+                        </li>
+                        <li>Perform illegal activities</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Password Attack Simulator ver1.0</p>
+            <p>Built with HTML, CSS and JavaScript</p>
+
+            <div class="tech-used">
+                <span>Tech Stack:</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>GitHub Pages</span>
+            </div>
+
+            <p class="copyright">© 2026 Cybersecurity Educational Project | For Academic Use Only</p>
+        </div>
+    </footer>
+
+    <script>
+        console.log("Password Attack Simulator-HTML Structure Loaded");
+    </script>
+</body>
+</html>
